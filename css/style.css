@@ -685,7 +685,6 @@ a {
 }
 
 .form-field {
-  position: relative;
   margin-bottom: 10px;
 }
 
@@ -701,10 +700,15 @@ a {
   color: #757575;
   margin-bottom: 4px;
 }
+
+.form-input-wrap {
+  position: relative;
+}
 .form-input {
   cursor: pointer;
+  height: 40px;
   width: 100%;
-  padding: 12px;
+  padding: 11px 12px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -740,7 +744,8 @@ a {
   cursor: pointer;
   position: absolute;
   left: 12px;
-  bottom: 11px;
+  bottom: 50%;
+  transform: translateY(50%);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
